@@ -1,0 +1,260 @@
+a {
+  color: #333;
+}
+p,
+blockquote {
+  line-height: 1.6em;
+}
+p {
+  margin: 0 0 2em;
+}
+blockquote {
+  border-left: 1px solid #ddd;
+  margin: 0 0 1em;
+  padding: 0 0 0 1.5em;
+}
+h1,
+h2 {
+  font-weight: 200;
+  color: #666;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.4em;
+  margin: 0;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+b {
+  color: #666;
+  border-bottom: 5px solid #ccc;
+}
+.commentable-section {
+  font-size: 20px;
+}
+.medium-insert-active {
+  margin: 0px;
+  padding: 0px;
+}
+blockquote {
+  font-size: 20px;
+}
+body {
+  font-family: "Source Sans Pro";
+  margin: 0;
+  color: #222;
+  font-weight: 200;
+}
+#Surface {
+  position: relative;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 2em 0;
+}
+#Surface #login-buttons {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  z-index: 1;
+}
+#Surface #login-buttons #login-dropdown-list {
+  left: inherit;
+  right: 0px;
+}
+#Surface > header {
+  position: relative;
+  padding: 2em 0 1em;
+  margin: 0 0 4em;
+  text-align: center;
+  border-bottom: 10px solid #eee;
+}
+#Surface > header img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#Surface > header .summary {
+  color: #999;
+  letter-spacing: 0.2em;
+  margin: 25px 0 25px 0;
+}
+#Surface > header ul {
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+}
+#Surface > header ul li {
+  display: inline-block;
+  padding: 0 5px 5px 5px;
+  border-bottom: 5px solid white;
+}
+#Surface > header ul li:hover,
+#Surface > header ul li.active {
+  border-bottom: 5px solid #333;
+}
+#Surface > header ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+#Surface.About .page-header {
+  margin: 0px 0 2em;
+}
+#Surface.About section h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Surface.About section p {
+  font-size: 20px;
+  line-height: 40px;
+}
+#Surface.About section p b {
+  color: #666;
+  border-bottom: 5px solid #ccc;
+}
+#Surface.About section p a {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 5px solid #333;
+}
+#Surface.About section p a:hover {
+  color: #ea0a0a;
+  border-bottom: 5px solid #ea0a0a;
+}
+#Surface.Contact .page-header {
+  margin: 0px 0 2em;
+}
+#Surface.Contact section {
+  text-align: center;
+}
+#Surface.Contact section h2 {
+  font-weight: bold;
+}
+#Surface.Contact section a {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 80px;
+  border-bottom: 5px solid;
+}
+#Surface.Contact section a:hover {
+  color: #ea0a0a;
+  border-bottom: 5px solid #ea0a0a;
+}
+#Surface.Projects .page-header {
+  margin: 0px 0 2em;
+}
+#Surface.Projects section {
+  text-align: center;
+}
+#Surface.Projects section ul li {
+  margin-bottom: 50px;
+}
+#Surface.Projects section ul li p {
+  font-size: 25px;
+}
+#Surface.Projects section ul li .links {
+  margin: 20px 0 20px 0;
+}
+#Surface.Projects section ul li .links a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+#Surface.Projects section ul li .links a:hover,
+#Surface.Projects section ul li .links a.active {
+  border-bottom: 5px solid #333;
+}
+#Surface.Projects section ul li p {
+  margin: 0 0 1em;
+}
+#Surface.Projects section ul li hr {
+  width: 50%;
+  height: 5px;
+  background-color: #eee;
+  border: 0px;
+}
+article {
+  margin: 0 0 6em;
+  padding: 0 0 6em;
+  box-sizing: border-box;
+  position: relative;
+}
+article header .stick {
+  text-align: center;
+}
+article header .stick .date a {
+  font-weight: bold;
+  text-decoration: none;
+}
+article header .stick .date a:hover {
+  border-bottom: 5px solid;
+}
+article:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30em;
+  left: 50%;
+  font-size: 1em;
+  border-bottom: 5px solid #ccc;
+  margin-left: -15em;
+  bottom: 0;
+  z-index: 1;
+}
+article:last-child:after,
+article:last-child:before {
+  display: none;
+}
+@media screen and (min-width: 60em) {
+  article {
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  article header {
+    padding-right: 4em;
+  }
+  article header .stick {
+    text-align: center;
+  }
+  article header .stick .date {
+    margin-top: 10px;
+  }
+  article header .stick .date a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  article header .stick .date a:hover {
+    border-bottom: 5px solid;
+  }
+  article .content {
+    font-size: 1.2em;
+  }
+  article header,
+  article .content {
+    display: table-cell;
+    vertical-align: top;
+  }
+  article header h2,
+  article .content h2 {
+    margin: 0 0 0.4em;
+  }
+}
+
