@@ -9,7 +9,7 @@ import "../styles/styles.less";
 export default class Contact extends Component {
   render() {
     return (
-      <Layout className='Contact'>
+      <Layout title="Contact" className='Contact'>
         <h2>I can be reached by</h2>
         <a href="mailto:yasaricli@gmail.com">yasaricli@gmail.com</a>
       </Layout>
