@@ -1,0 +1,67 @@
+a {
+    color: #333;
+}
+
+p,
+blockquote {
+    line-height: 1.6em;
+}
+
+p {
+    margin: 0 0 2em;
+}
+
+blockquote {
+    border-left: 1px solid #ddd;
+    margin: 0 0 1em;
+    padding: 0 0 0 1.5em;
+}
+
+h1,
+h2 {
+    font-weight: 200;
+    color: #666;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    li {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+b {
+    color: #666;
+    border-bottom: 5px solid #ccc;
+}
+
+.commentable-section {
+    font-size: 20px;
+}
+
+.medium-insert-active {
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote {
+    font-size: 20px;
+}
