@@ -1,19 +1,17 @@
 {
-  "name": "yasaricli.github.io",
+  "name": "yasaricli-site",
   "version": "0.0.1",
   "description": "Personal Web",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-less": "^1.0.1",
-    "less": "^3.0.4",
-    "next": "^9.1.5",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "next": "^10.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.8",
     "underscore": "^1.9.1"
   }
 }

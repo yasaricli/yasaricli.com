@@ -1,9 +1,7 @@
-const withLess = require('@zeit/next-less');
-
-const isProduction = process.env.NODE_ENV === 'production';
-const PRODUCTION_STATIC_URL = '/yasaricli.github.io/';
+const path = require('path')
 
 module.exports = {
-  assetPrefix:  isProduction ? PRODUCTION_STATIC_URL : '',
-  ...withLess()
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
 }

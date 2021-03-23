@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-
 import _ from 'underscore';
 
 export class Layout extends Component {
