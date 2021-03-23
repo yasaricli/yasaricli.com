@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "docker:build": "docker build -t yasaricli/yasaricli-site:latest .",
+    "docker:push": "docker push yasaricli/yasaricli-site:latest"
   },
   "dependencies": {
     "classnames": "^2.2.6",
