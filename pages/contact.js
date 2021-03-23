@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout } from '../components/layout';
+import { Layout } from '../src/layout';
 
 export default class Contact extends Component {
   render() {

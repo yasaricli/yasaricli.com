@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Layout } from "../components/layout";
+import { Layout } from "../src/layout";
 
 const ALL_DEVELOPMENT_START_YEAR = 2004;
 const JS_DEVELOPMENT_START_YEAR = 2011;

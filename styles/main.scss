@@ -54,14 +54,17 @@ body {
                 padding: 0 5px 5px 5px;
                 border-bottom: 5px solid white;
 
-                &:hover,
-                &.active {
-                    border-bottom: 5px solid #333;
-                }
-
                 a {
                     font-weight: bold;
                     text-decoration: none;
+                    padding: 2px 5px;
+                    font-size: 18px;
+                    
+                    &:hover,
+                    &.active {
+                        border-bottom: 5px solid #333;
+                    }
+    
                 }
             }
         }
