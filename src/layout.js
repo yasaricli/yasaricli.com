@@ -1,50 +1,51 @@
-import React, { Component } from "react";
+import { withRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
-import _ from "underscore";
+import Link from "next/link";
 
-// components
-import Link from "../src/components/activeLink";
+const Layout = ({ className, title, children, router }) => {
+  const fullTitle = `Yaşar İçli ~ ${title}`;
 
-export class Layout extends Component {
-  render() {
-    return (
-      <div id="Surface" className={this.props.className}>
-        <Head>
-          <title>{this.props.title} ~ Yaşar İçli</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
-            rel="stylesheet"
-          />
-        </Head>
+  const isActiveClassName = (route) => {
+    if (router.route == route) {
+      return {
+        className: "active",
+      };
+    }
 
-        <header className="page-header">
-          <Image src="/images/avatar.jpeg" width="150" height="150" />
+    return {};
+  };
 
-          <ul>
-            <li>
-              <Link activeClassName="active" href="/">
-                <a>about</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.github.com/yasaricli">
-                <a target="_blank">github</a>
-              </Link>
-            </li>
-            <li>
-              <Link activeClassName="active" href="/contact">
-                <a>contact</a>
-              </Link>
-            </li>
-          </ul>
-        </header>
-        <section>{this.props.children}</section>
-      </div>
-    );
-  }
-}
+  return (
+    <div id="Surface" className={className}>
+      <Head>
+        <title>{fullTitle}</title>
+      </Head>
+
+      <header className="page-header">
+        <Image src="/images/avatar.png" width={150} height={150} alt="Avatar"/>
+
+        <ul>
+          <li>
+            <Link href="/" {...isActiveClassName("/")} title="About">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.github.com/yasaricli" target="_blank" title="Github">
+              Github
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" {...isActiveClassName("/contact")} title="Contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </header>
+      <section>{children}</section>
+    </div>
+  );
+};
+
+export default withRouter(Layout);

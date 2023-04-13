@@ -26,7 +26,7 @@ body {
         }
     }
 
-    > header {
+    >header {
         position: relative;
         padding: 2em 0 1em;
         margin: 0 0 4em;
@@ -59,12 +59,12 @@ body {
                     text-decoration: none;
                     padding: 2px 5px;
                     font-size: 18px;
-                    
+
                     &:hover,
                     &.active {
                         border-bottom: 5px solid #333;
                     }
-    
+
                 }
             }
         }
@@ -74,6 +74,7 @@ body {
         .page-header {
             margin: 0px 0 2em;
         }
+
         section {
             h2 {
                 font-weight: bold;
@@ -107,43 +108,29 @@ body {
         .page-header {
             margin: 0px 0 2em;
         }
-        section {
-            text-align: center;
-
-            h2 {
-                font-weight: bold;
-            }
-            a {
-                text-decoration: none;
-                font-size: 30px;
-                line-height: 80px;
-                border-bottom: 5px solid;
-
-                &:hover {
-                    color: #ea0a0a;
-                    border-bottom: 5px solid #ea0a0a;
-                }
-            }
-        }
     }
 
     &.Projects {
         .page-header {
             margin: 0px 0 2em;
         }
+
         section {
             text-align: center;
+
             ul {
                 li {
                     margin-bottom: 50px;
-                    img {
-                    }
+
+                    img {}
+
                     p {
                         font-size: 25px;
                     }
 
                     .links {
                         margin: 20px 0 20px 0;
+
                         a {
                             font-weight: bold;
                             text-decoration: none;
@@ -155,9 +142,11 @@ body {
                             }
                         }
                     }
+
                     p {
                         margin: 0 0 1em;
                     }
+
                     hr {
                         width: 50%;
                         height: 5px;
