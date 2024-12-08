@@ -28,7 +28,7 @@ const Layout = ({ className, title, children, router }) => {
         <ul>
           <li>
             <Link href="/" {...isActiveClassName("/")} title="About">
-              About
+              Hakkımda
             </Link>
           </li>
           <li>
@@ -38,7 +38,7 @@ const Layout = ({ className, title, children, router }) => {
           </li>
           <li>
             <Link href="/contact" {...isActiveClassName("/contact")} title="Contact">
-              Contact
+              İletişim
             </Link>
           </li>
         </ul>

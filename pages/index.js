@@ -1,49 +1,81 @@
 import Layout from "../src/layout";
 
 export default function Home() {
-  const ALL_DEVELOPMENT_START_YEAR = 2004;
-  const JS_DEVELOPMENT_START_YEAR = 2011;
-  const CURRENT_YEAR = new Date().getFullYear();
-
-  const ALL_YEARS = CURRENT_YEAR - ALL_DEVELOPMENT_START_YEAR;
-  const JS_YEARS = CURRENT_YEAR - JS_DEVELOPMENT_START_YEAR;
-
   return (
-    <Layout title="About" className="About">
-      <h2>Greetings I am Yaşar;</h2>
+    <Layout title="Hakkında" className="About">
+      <h2>Selam, ben Yaşar;</h2>
       <p>
-        For about <b>{ALL_YEARS} years</b> I have been involved in coding,
-        development. During these <b>{ALL_YEARS} years</b> I have worked both as
-        a <b>frontend</b> and <b>backend</b> developer. Thru the years I have
-        been worked on many projects involving a variety of coding languages.
+        2004 yılından beri yazılım geliştirme ile ilgileniyorum. Bu süre
+        boyunca <b>frontend</b> ve <b>backend</b> geliştirme alanlarında birçok
+        projede yer aldım. Yazılım geliştirme sürecinin her aşamasında yer
+        alarak, farklı teknolojilerle çeşitli sektörlerde çözümler ürettim.
       </p>
       <p>
-        For the last <b>{JS_YEARS} years</b> I have shifted most of my attention
-        to <b>javascript</b>, especially{" "}
-        <a href="//www.meteor.com" target="_blank">
-          Meteor Framework
+        Son yıllarda odak noktam <b>JavaScript</b> ve modern teknolojiler
+        oldu. Özellikle{" "}
+        <a href="//reactjs.org" target="_blank">
+          React
         </a>
-        . This allowed me to progress fairly quickly in my aptitude with{" "}
-        <b>javascript</b>. Generally I am more interested structure development.
-        Most of my time is spend working on{" "}
+        ,{" "}
+        <a href="//reactnative.dev" target="_blank">
+          React Native
+        </a>{" "}
+        ve{" "}
+        <a href="//nodejs.org" target="_blank">
+          Node.js
+        </a>{" "}
+        gibi framework'ler ve platformlar ile kullanıcı dostu, performansı
+        yüksek ve ölçeklenebilir web ve mobil uygulamalar geliştiriyorum.
+        Bununla birlikte, tasarımdan geliştirmeye kadar tüm süreçlerde en iyi
+        kullanıcı deneyimini sunmayı hedefliyorum.
+      </p>
+      <p>
+        Geliştirme sürecinde, sadece kod yazmanın ötesinde, yazılım mimarisi
+        oluşturma, sistem tasarımı ve projelerin sürdürülebilirliğini sağlama
+        konularında da çalışıyorum. Bir projenin uzun vadeli başarısı için
+        yazılımın hem teknik hem de kullanıcı açısından kaliteli olmasının
+        önemine inanıyorum.
+      </p>
+      <p>
+        Profesyonel işlerimin yanı sıra <b>açık kaynak projelere</b> destek
+        vermekten büyük keyif alıyorum. Açık kaynak topluluğuna katkıda bulunmak,
+        hem kendi bilgi birikimimi artırmamı hem de diğer geliştiricilerle
+        iletişim kurarak fikir alışverişi yapmamı sağlıyor. Bazı katkılarımı{" "}
         <a href="//github.com/yasaricli" target="_blank">
           Github
         </a>{" "}
-        open source projects.
+        üzerinden inceleyebilirsiniz. Yeni teknolojiler öğrenmek ve öğrendiklerimi
+        paylaşmak benim için bir tutku.
       </p>
       <p>
-        Also I like to and do support <b>open source</b> projects.
-      </p>
-      <p>
-        I am currently working as a Frontend Team Leader in{" "}
+        Şu anda{" "}
         <a href="//www.tatilsepeti.com" target="_blank">
           Tatilsepeti
         </a>{" "}
-        company and I am a founder of{" "}
+        bünyesinde Mobile & Frontend Lead Developer olarak çalışıyorum.
+        Burada, ekip arkadaşlarımla birlikte kullanıcı odaklı, yenilikçi ve
+        yüksek kaliteli uygulamalar geliştirmek için çalışıyorum.
+      </p>
+      <p>
+        Aynı zamanda, kurucusu olduğum{" "}
         <a href="https://www.frontekip.com" target="_blank">
           Frontekip
-        </a>
-        .
+        </a>{" "}
+        şirketinde, yenilikçi teknolojilerle güçlü projeler geliştiriyoruz.
+        Frontekip'te amacımız, müşterilerimizin ihtiyaçlarına en uygun ve
+        verimli çözümleri sunarak iş süreçlerini daha etkili hale getirmektir.
+      </p>
+      <p>
+        Teknolojiyi bir araç olarak görmenin ötesinde, onunla yaratıcı çözümler
+        geliştirmeyi ve daha iyi bir dünya için fayda sağlamayı hedefliyorum.
+        Bu amaçla, yazılım geliştirme dünyasında hem bireysel hem de
+        kurumsal düzeyde sürekli olarak kendimi geliştirmeye ve daha iyisini
+        üretmeye odaklanıyorum.
+      </p>
+      <p>
+        Eğer bir projeniz varsa, ya da sadece teknoloji üzerine bir sohbet
+        etmek isterseniz, bana her zaman ulaşabilirsiniz. İletişim kurmaktan
+        ve yeni fikirler üzerinde konuşmaktan memnuniyet duyarım.
       </p>
     </Layout>
   );
